@@ -95,12 +95,15 @@ p>a{
 }
 
 .about{
+    display:flex;
+    flex-direction: column;
     width: 550px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 2px 3px 14px -8px black;
     padding: 10px 50px;
     margin: 5%;
+    gap:10px;
 }
 
 .description{
