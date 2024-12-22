@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<!--Algunos de mis códigos, clases e id's estarán en inglés, meramente por la simplicidad del idioma ya que en español muchas veces se utilizan palabras o frases más largas-->
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#">
+            <h2>Profile</h2>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Find connections</a></li>
+            <li><button class="logout" onclick="are_you_sure()"><a href="#"><i class="fa-solid fa-power-off"></i> Log out</a></button></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <section class="left">
+            <div class="user-card">
+                <div class="h-color"></div>
+                <div class="user-content">
+                    <img class="pfp" src="img/Danny.jpg" alt="Profile picture">
+                    <div class="description">
+                        <h1>Dan Avidan</h1>
+                        <p>New Jersey, USA</p>
+                        <p>Musician | Comedian | Actor</p>
+                        <p>One half of the musical comedy duo NSP, co-host of Game Grumps with Arin Hanson. Part of Starbomb, vocalist for Shadow Academy.<br>
+                            Listen to <a href="https://open.spotify.com/intl-es/album/5sq7TecbA0bzgELXZmlXgg" target="_blank">"Under the covers II"</a>!
+                        </p>
+                        <button class="edit-profile"><a href="#"><i class="fa-solid fa-gear"></i> edit profile</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="about">
+                <h2>Education</h2>
+                <p>Boston University</p>
+            </div>
+        </section>
+        <section class="right">
+            <div class="requests">
+                <h2>Requests</h2>
+                <div class="request_1">
+                    <img class="req-img" src="img/Brian_david_gilbert.jpg" alt="">
+                    <p>Brian David</p>
+                    <button class="req">✓</button>
+                    <button class="req">✕</button>
+                </div>
+                <div class="request_1">
+                    <img class="req-img" src="img/montaigne.jpg" alt="">
+                    <p>Montaigne</p>
+                    <button class="req">✓</button>
+                    <button class="req">✕</button>
+                </div>
+            </div>
+            <div class="connections">
+                <h2>Your connections (+500)</h2>
+                <div class="connection_1">
+                    <img class="con-img" src="img/Brian.jpg" alt="">
+                    <p>Brian Wecht</p>
+                </div>
+                <div class="connection_1">
+                    <img class="con-img" src="img/meouch.jpg" alt="">
+                    <p>Commander Meouch</p>
+                </div>
+                <div class="connection_1">
+                    <img class="con-img" src="img/doctor_sung.jpg" alt="">
+                    <p>Doctor Sung</p>
+                </div>
+                <div class="connection_1">
+                    <img class="con-img" src="img/havve_hogan.jpg" alt="">
+                    <p>Havve Hogan</p>
+                </div>
+                <div class="connection_1">
+                    <img class="con-img" src="img/lord_phobos.jpg" alt="">
+                    <p>Lord Phobos</p>
+                </div>
+                <div class="connection_1">
+                    <img class="con-img" src="img/tom_cardy.jpg" alt="">
+                    <p>Tom Cardy</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/cffef211c5.js" crossorigin="anonymous"></script>
+</body>
+</html>
